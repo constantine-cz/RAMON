@@ -3,6 +3,38 @@
     Author     : Jiří Ludvar <jiri.ludvar@mediaaction.cz>
 */
 
+@violet_dark: #683c64;
+@violet: #a769a7;
+@violet_light: #bf93c1;
+
+@green_dark: #556e5c;
+@green: #6eb184;
+@green_light: #a6d2b0;
+
+@blue_dark: #53678c;
+@blue: #6baddd;
+@blue_light: #a4ccec;
+
+
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #000;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #000;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #000;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +42,193 @@
 }
 html{
     background: #ddd url(../gfx/bg_grey.png) 50% 0% no-repeat;
-    font-family: 'Open Sans', Verdana, sans-serif;
+    font-family: 'PT Sans', Verdana, sans-serif;
+    font-size: 14px;
 }
 body{
     background: url(../gfx/bg_spoj.png) 50% 100% no-repeat;
+    background: url(../gfx/bg_spoj.png) 50% -500px no-repeat;
+    background: url(../gfx/bg_spoj.png)23% -550px no-repeat;
+}
+body, html{
+    height: 100%;
+}
+.inner{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.fleft{
+    float: left;
+}
+.fright{
+    float: right;
+}
+.clr{
+    clear: both;
+}
+
+.btn{
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    transition: 0.3s;
+    
+    &:hover{
+        background: lighten(#000, 30);
+    }
+}
+
+h1{
+    font-size: 30em/14;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+#all{
+    min-height: 100%;
+    height: auto;
+    margin-bottom: -180px;
+}
+#push, #footer{
+    height: 180px;
+    clear: both;
+}
+#footer{
+    background: #383837;
+}
+
+#header{
+    padding: 20px 0 230px;
+    overflow: hidden;
+
+    .logo{
+        margin-left: 25px;
+    }
+    .fright{
+        line-height: 72px;
+    }
+    form{
+        display: inline;
+    }
+    input{
+        width: 190px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 12px;
+        border: 1px solid #000;
+        outline: none;
+        padding: 0 15px;
+        vertical-align: text-bottom;;
+    }
+
+    strong{
+        font-size: 25em/14;
+        padding-right: 50px;
+    }
+}
+
+#menu{
+
+    .sloupek{
+        width: 209px;
+        float: left;
+        margin-right: 7px;
+
+        &.violet{
+            .first{
+                background: @violet_dark;
+                &:hover{
+                    background: lighten(@violet_dark, 10);
+                }
+            }
+            .second{
+                background: @violet;
+                &:hover{
+                    background: lighten(@violet, 10);
+                }
+            }
+            .third{
+                background: @violet_light;
+                &:hover{
+                    background: lighten(@violet_light, 5);
+                }
+            } 
+        }
+        &.green{
+            .first{
+                background: @green_dark;
+                &:hover{
+                    background: lighten(@green_dark, 10);
+                }
+            }
+            .second{
+                background: @green;
+                &:hover{
+                    background: lighten(@green, 10);
+                }
+            }
+            .third{
+                background: @green_light;
+                &:hover{
+                    background: lighten(@green_light, 5);
+                }
+            } 
+        }
+        &.blue{
+            .first{
+                background: @blue_dark;
+                &:hover{
+                    background: lighten(@blue_dark, 10);
+                }
+            }
+            .second{
+                background: @blue;
+                &:hover{
+                    background: lighten(@blue, 10);
+                }
+            }
+            .third{
+                background: @blue_light;
+                &:hover{
+                    background: lighten(@blue_light, 5);
+                }
+            } 
+        }
+
+        a{
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 7px;
+            padding: 0 10px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+
+    }
+}
+
+#main{
+    overflow: hidden;
+    margin: 20px 0;
+
+    .container{
+        background: rgba(255,255,255,0.5);
+        padding: 20px 60px 20px 20px;
+        max-width: 400px;
+        margin-bottom: 7px; 
+        
+        p{
+            color: #565759;
+        }
+    }
 }

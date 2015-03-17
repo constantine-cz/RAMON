@@ -59,10 +59,10 @@ body, html{
 }
 
 .fleft{
-    float: left;
+    float: left !important;
 }
 .fright{
-    float: right;
+    float: right !important;
 }
 .clr{
     clear: both;
@@ -94,6 +94,11 @@ h1{
     min-height: 100%;
     height: auto;
     margin-bottom: -180px;
+    
+    .inner{
+        position: relative;
+        overflow: hidden;
+    }
 }
 #push, #footer{
     height: 180px;
@@ -225,6 +230,20 @@ h1{
         p{
             color: #565759;
         }
+    }
+}
+#zajmy{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    
+    span{
+        font-size: 12em/14;
+    }
+    strong{
+        display: block;
+        font-size: 30em/14;
+        font-weight: normal;
     }
 }
 

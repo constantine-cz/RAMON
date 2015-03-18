@@ -41,29 +41,18 @@
     box-sizing: border-box;
 }
 html{
-    background: #ddd url(../gfx/bg_grey.png) 50% 0% no-repeat;
+    background: #ddd;
     font-family: 'PT Sans', Verdana, sans-serif;
     font-size: 14px;
 }
-body{
-    background: url(../gfx/bg_spoj.png) 50% 100% no-repeat;
-    background: url(../gfx/bg_spoj.png) 50% -500px no-repeat;
-    background: url(../gfx/bg_spoj.png)23% -550px no-repeat;
-}
-body, html{
-    height: 100%;
-}
+
+
 .inner{
     max-width: 1040px;
     margin: 0 auto;
 }
 
-.fleft{
-    float: left !important;
-}
-.fright{
-    float: right !important;
-}
+
 .clr{
     clear: both;
 }
@@ -78,7 +67,7 @@ body, html{
     line-height: 30px;
     display: inline-block;
     transition: 0.3s;
-    
+
     &:hover{
         background: lighten(#000, 30);
     }
@@ -91,56 +80,48 @@ h1{
 }
 
 #all{
-    min-height: 100%;
-    height: auto;
-    margin-bottom: -180px;
-    
+
     .inner{
         position: relative;
         overflow: hidden;
     }
 }
-#push, #footer{
-    height: 180px;
-    clear: both;
-}
+
 
 #header{
-    padding: 20px 0 230px;
+    padding: 20px 10px;
     overflow: hidden;
+    text-align: center;
 
     .logo{
         margin-left: 25px;
     }
     .fright{
-        line-height: 72px;
+
     }
-    form{
-        display: inline;
-    }
+
     input{
-        width: 190px;
-        height: 24px;
-        line-height: 24px;
-        border-radius: 12px;
+        width: 90%;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 16px;
         border: 1px solid #000;
         outline: none;
         padding: 0 15px;
-        vertical-align: text-bottom;;
+        vertical-align: text-bottom;
+        margin: 20px 0;
     }
 
     strong{
         font-size: 25em/14;
-        padding-right: 50px;
     }
 }
 
 #menu{
+    padding: 0 10px;
 
     .sloupek{
-        width: 209px;
-        float: left;
-        margin-right: 7px;
+        margin-bottom: 30px;
 
         &.violet{
             .first{
@@ -207,9 +188,9 @@ h1{
             display: block;
             color: #fff;
             text-decoration: none;
-            height: 30px;
-            line-height: 30px;
-            margin-bottom: 7px;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 10px;
             padding: 0 10px;
             text-transform: uppercase;
             transition: 0.3s;
@@ -226,17 +207,16 @@ h1{
         padding: 20px 60px 20px 20px;
         max-width: 400px;
         margin-bottom: 7px; 
-        
+
         p{
             color: #565759;
         }
     }
 }
 #zajmy{
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    
+    padding: 10px;
+    float: right;
+
     span{
         font-size: 12em/14;
     }
@@ -252,7 +232,8 @@ h1{
     padding: 30px 0;
     background: #383837;
     line-height: 1.7em;
-    
+    overflow: hidden;
+
     h2, strong{
         color: #fff;
     }
@@ -265,14 +246,7 @@ h1{
     }
     .sloupek{
         font-size: 13em / 14;
-        float: left;
         padding: 0 20px;
-        
-        &.adresa{
-            width: 350px;
-        }
-        &.kontakt{
-            width: 270px;
-        }
+        margin-bottom: 20px;
     }
 }

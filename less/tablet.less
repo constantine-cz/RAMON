@@ -1,0 +1,123 @@
+/* 
+    Created on : 18.3.2015, 10:06:31
+    Author     : Jiří Ludvar <jiri.ludvar@mediaaction.cz>
+*/
+
+
+@media (min-width: 640px){
+    .fleft{
+        float: left !important;
+    }
+    .fright{
+        float: right !important;
+    }
+
+    #header{
+        input{
+            width: 100%;
+        }
+    }
+    #menu{
+
+        .sloupek{
+            width: 33%;
+            float: left;
+            margin-right: 0.5%;
+
+            &.blue{
+                margin-right: 0;
+            }
+            a{
+                padding: 0 5px;
+            }
+        }
+    }
+    #footer{
+        .sloupek{
+            float: left;
+            width: 50%;
+        }
+    }
+}
+
+
+@media (min-width: 768px){
+    body, html{
+        height: 100%;
+    }
+    html{
+        background: #ddd url(../gfx/bg_grey.png) 50% 0% no-repeat;
+    }
+    body{
+        background: url(../gfx/bg_spoj.png) 50% 100% no-repeat;
+        background: url(../gfx/bg_spoj.png) 50% -500px no-repeat;
+        background: url(../gfx/bg_spoj.png) 23% -520px no-repeat;
+    }
+    #all{
+        min-height: 100%;
+        height: auto;
+        margin-bottom: -180px;
+    }
+    #push, #footer{
+        height: 180px;
+        clear: both;
+    }
+    #header{
+        padding: 20px 0 230px;
+
+        .fright{
+            line-height: 72px;
+        }
+
+        input{
+            width: 190px;
+            height: 24px;
+            line-height: 24px;
+            border-radius: 12px;
+            margin: 0;
+        }
+
+        strong{
+            padding-right: 50px;
+        }
+        form{
+            display: inline;
+        }
+    }
+    #menu{
+        padding: 0;
+
+        .sloupek{
+            width: 209px;
+            float: left;
+            margin-right: 7px;
+            margin-bottom: 0;
+
+            a{
+                height: 30px;
+                line-height: 30px;
+                margin-bottom: 7px;
+                padding: 0 10px;
+            }
+        }
+    }
+    #zajmy{
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+    }
+
+    #footer{
+        .sloupek{
+            width: auto; 
+
+            &.adresa{
+                width: 350px;
+            }
+            &.kontakt{
+                width: 270px;
+            }
+        }
+    }
+
+}
